@@ -1,0 +1,66 @@
+{
+  "reglas": [
+
+    { "id": "R1",  "antecedentes": ["Fiebre", "Tos"],                                       "consecuente": "Infeccion_Respiratoria" },
+    { "id": "R2",  "antecedentes": ["Infeccion_Respiratoria", "Dificultad_Respiratoria"],   "consecuente": "Neumonia" },
+    { "id": "R3",  "antecedentes": ["Fiebre", "Dolor_Muscular"],                            "consecuente": "Sindrome_Gripal" },
+    { "id": "R4",  "antecedentes": ["Sindrome_Gripal", "Dolor_Cabeza"],                     "consecuente": "Gripe" },
+    { "id": "R5",  "antecedentes": ["Estornudos", "Congestion_Nasal"],                      "consecuente": "Cuadro_Catarral" },
+    { "id": "R6",  "antecedentes": ["Cuadro_Catarral", "Dolor_Garganta"],                   "consecuente": "Resfriado_Comun" },
+    { "id": "R7",  "antecedentes": ["Fiebre", "Dolor_Garganta"],                            "consecuente": "Faringitis" },
+    { "id": "R8",  "antecedentes": ["Mocos_Verdes", "Dolor_Cabeza"],                        "consecuente": "Sinusitis" },
+    { "id": "R9",  "antecedentes": ["Sinusitis", "Fiebre"],                                 "consecuente": "Sinusitis_Bacteriana" },
+    { "id": "R10", "antecedentes": ["Tos_Productiva", "Infeccion_Respiratoria"],            "consecuente": "Bronquitis" },
+
+    { "id": "R11", "antecedentes": ["Sibilancias", "Tos_Seca"],                             "consecuente": "Inflamacion_Vias_Aereas" },
+    { "id": "R12", "antecedentes": ["Inflamacion_Vias_Aereas", "Dificultad_Respiratoria"],  "consecuente": "Asma" },
+    { "id": "R13", "antecedentes": ["Infeccion_Respiratoria", "Dolor_Pecho"],               "consecuente": "Infeccion_Respiratoria_Baja" },
+    { "id": "R14", "antecedentes": ["Infeccion_Respiratoria_Baja", "Tos_Productiva"],       "consecuente": "Neumonia_Bacteriana" },
+    { "id": "R15", "antecedentes": ["Tos_Persistente", "Sudor_Nocturno"],                   "consecuente": "Sospecha_Tuberculosis" },
+    { "id": "R16", "antecedentes": ["Sospecha_Tuberculosis", "Perdida_Peso"],               "consecuente": "Tuberculosis" },
+    { "id": "R17", "antecedentes": ["Fiebre", "Tos_Seca"],                                  "consecuente": "Cuadro_Viral_Respiratorio" },
+    { "id": "R18", "antecedentes": ["Cuadro_Viral_Respiratorio", "Perdida_Olfato"],         "consecuente": "COVID_19" },
+    { "id": "R19", "antecedentes": ["Bronquitis", "Dificultad_Respiratoria"],               "consecuente": "Bronquitis_Severa" },
+    { "id": "R20", "antecedentes": ["Asma", "Sibilancias"],                                 "consecuente": "Crisis_Asmatica" },
+
+    { "id": "R21", "antecedentes": ["Diarrea", "Dolor_Abdominal"],                          "consecuente": "Sindrome_Diarreico" },
+    { "id": "R22", "antecedentes": ["Vomito", "Nausea"],                                    "consecuente": "Sindrome_Emetico" },
+    { "id": "R23", "antecedentes": ["Sindrome_Diarreico", "Sindrome_Emetico"],              "consecuente": "Gastroenteritis" },
+    { "id": "R24", "antecedentes": ["Gastroenteritis", "Fiebre"],                           "consecuente": "Gastroenteritis_Infecciosa" },
+    { "id": "R25", "antecedentes": ["Sindrome_Emetico", "Comida_Sospechosa"],               "consecuente": "Intoxicacion_Alimentaria" },
+    { "id": "R26", "antecedentes": ["Acidez", "Dolor_Abdominal"],                           "consecuente": "Inflamacion_Gastrica" },
+    { "id": "R27", "antecedentes": ["Inflamacion_Gastrica", "Nausea"],                      "consecuente": "Gastritis" },
+    { "id": "R28", "antecedentes": ["Inflamacion_Gastrica", "Sangre_Heces"],                "consecuente": "Ulcera_Peptica" },
+    { "id": "R29", "antecedentes": ["Diarrea", "Sangre_Heces"],                             "consecuente": "Sindrome_Disenterico" },
+    { "id": "R30", "antecedentes": ["Sindrome_Disenterico", "Fiebre"],                      "consecuente": "Colitis" },
+
+    { "id": "R31", "antecedentes": ["Sindrome_Disenterico", "Dolor_Abdominal"],             "consecuente": "Disenteria" },
+    { "id": "R32", "antecedentes": ["Dolor_Abdominal", "Nausea", "Fiebre"],                 "consecuente": "Sospecha_Apendicitis" },
+    { "id": "R33", "antecedentes": ["Sospecha_Apendicitis", "Vomito"],                      "consecuente": "Apendicitis" },
+    { "id": "R34", "antecedentes": ["Sindrome_Diarreico", "Vomito"],                        "consecuente": "Sindrome_Deshidratacion" },
+    { "id": "R35", "antecedentes": ["Sindrome_Deshidratacion", "Mareo"],                    "consecuente": "Deshidratacion_Severa" },
+    { "id": "R36", "antecedentes": ["Fiebre", "Dolor_Articulaciones"],                      "consecuente": "Sindrome_Febril_Articular" },
+    { "id": "R37", "antecedentes": ["Sindrome_Febril_Articular", "Sarpullido"],             "consecuente": "Sospecha_Dengue" },
+    { "id": "R38", "antecedentes": ["Sospecha_Dengue", "Dolor_Cabeza"],                     "consecuente": "Dengue_Clasico" },
+    { "id": "R39", "antecedentes": ["Sangrado_Encias", "Sangrado_Nasal"],                   "consecuente": "Sindrome_Hemorragico" },
+    { "id": "R40", "antecedentes": ["Dengue_Clasico", "Sindrome_Hemorragico"],              "consecuente": "Dengue_Hemorragico" },
+
+    { "id": "R41", "antecedentes": ["Fiebre", "Escalofrios"],                               "consecuente": "Sindrome_Febril" },
+    { "id": "R42", "antecedentes": ["Sindrome_Febril", "Escalofrios_Recurrentes"],          "consecuente": "Sospecha_Malaria" },
+    { "id": "R43", "antecedentes": ["Sospecha_Malaria", "Sudor_Nocturno"],                  "consecuente": "Malaria" },
+    { "id": "R44", "antecedentes": ["Malaria", "Antecedente_Viaje_Tropical"],               "consecuente": "Malaria_Confirmada" },
+    { "id": "R45", "antecedentes": ["Ardor_Orinar", "Orina_Turbia"],                        "consecuente": "Inflamacion_Urinaria" },
+    { "id": "R46", "antecedentes": ["Inflamacion_Urinaria", "Fiebre"],                      "consecuente": "Infeccion_Urinaria" },
+    { "id": "R47", "antecedentes": ["Infeccion_Urinaria", "Dolor_Lumbar"],                  "consecuente": "Pielonefritis" },
+    { "id": "R48", "antecedentes": ["Palidez", "Fatiga"],                                   "consecuente": "Sindrome_Anemico" },
+    { "id": "R49", "antecedentes": ["Sindrome_Anemico", "Mareo"],                           "consecuente": "Anemia_Ferropenica" },
+    { "id": "R50", "antecedentes": ["Sindrome_Anemico", "Sangre_Heces"],                    "consecuente": "Anemia_Por_Sangrado" },
+
+    { "id": "R51", "antecedentes": ["Sindrome_Gripal", "Tos"],                              "consecuente": "Cuadro_Gripal_Respiratorio" },
+    { "id": "R52", "antecedentes": ["Cuadro_Gripal_Respiratorio", "Dolor_Garganta"],        "consecuente": "Influenza" },
+    { "id": "R53", "antecedentes": ["Faringitis", "Mocos_Verdes"],                          "consecuente": "Faringitis_Bacteriana" },
+    { "id": "R54", "antecedentes": ["Cuadro_Catarral", "Fiebre"],                           "consecuente": "Resfriado_Febril" },
+    { "id": "R55", "antecedentes": ["Hinchazon_Abdominal", "Estrenimiento"],                "consecuente": "Sindrome_Obstructivo_Intestinal" }
+
+  ]
+}
